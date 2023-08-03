@@ -18,15 +18,10 @@ class Solver
   end
 
   def self.fizzbuzz(input)
-    if input % 3 == 0 && input % 5 == 0
-      return "fizzbuzz"
-    end
-    if input % 3 == 0
-      return "fizz"
-    end
-    if input % 5 == 0
-      return "buzz"
-    end
-  end
+    return 'fizzbuzz' if (input % 3).zero? && (input % 5).zero?
+    return 'fizz' if (input % 3).zero?
+    return unless (input % 5).zero?
 
+    'buzz'
+  end
 end

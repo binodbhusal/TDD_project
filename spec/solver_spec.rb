@@ -20,25 +20,25 @@ describe Solver do
 
   context '#reverse' do
     it 'returns "olleh" for "hello"' do
-      expect(Solver.reverse("hello")).to eql "olleh"
+      expect(Solver.reverse('hello')).to eql 'olleh'
     end
 
     it 'returns "dlrow" for "world"' do
-      expect(Solver.reverse("world")).to eql "dlrow"
+      expect(Solver.reverse('world')).to eql 'dlrow'
     end
   end
 
   context '#fizzbuzz' do
     it 'returns "fizz" for 3' do
-      expect(Solver.fizzbuzz(3)).to eql "fizz"
+      expect(Solver.fizzbuzz(3)).to eql 'fizz'
     end
 
     it 'returns "buzz" for 5' do
-      expect(Solver.fizzbuzz(5)).to eql "buzz"
+      expect(Solver.fizzbuzz(5)).to eql 'buzz'
     end
 
     it 'returns "fizzbuzz" for 15' do
-      expect(Solver.fizzbuzz(15)).to eql "fizzbuzz"
+      expect(Solver.fizzbuzz(15)).to eql 'fizzbuzz'
     end
   end
 end

@@ -44,10 +44,11 @@ GEM
 
 PLATFORMS
   arm64-darwin-22
+  x64-mingw-ucrt
 
 DEPENDENCIES
   rspec
-  rubocop (>= 1.0, < 2.0)
+  rubocop
 
 BUNDLED WITH
    2.2.15
