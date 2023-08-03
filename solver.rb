@@ -1,5 +1,3 @@
-# frozen_string_literal: true
-
 # Solver is a utility class that provides various mathematical operations.
 # It currently supports calculating the factorial of a positive integer.
 class Solver
