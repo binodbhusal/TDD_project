@@ -9,7 +9,7 @@ class Solver
     return 1 if number.zero?
 
     result = 1
-    (1..n).each do |num|
+    (1..number).each do |num|
       result *= num
     end
     result
