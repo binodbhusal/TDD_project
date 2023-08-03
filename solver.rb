@@ -17,4 +17,16 @@ class Solver
     input.reverse
   end
 
+  def self.fizzbuzz(input)
+    if input % 3 == 0 && input % 5 == 0
+      return "fizzbuzz"
+    end
+    if input % 3 == 0
+      return "fizz"
+    end
+    if input % 5 == 0
+      return "buzz"
+    end
+  end
+
 end
