@@ -12,4 +12,9 @@ class Solver
     end
     result
   end
+
+  def self.reverse(input)
+    input.reverse
+  end
+
 end
