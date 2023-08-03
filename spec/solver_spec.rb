@@ -1,8 +1,8 @@
 require 'rspec'
 require_relative '../solver'
 
-RSpec.describe Solver do
-  describe '#factorial' do
+describe Solver do
+  context '#factorial' do
     it 'returns 1 for factorial of 0' do
       expect(Solver.factorial(0)).to eq(1)
     end
@@ -15,6 +15,16 @@ RSpec.describe Solver do
     end
     it 'raise an exception for negative integer' do
       expect { Solver.factorial(-3) }.to raise_error(ArgumentError)
+    end
+  end
+
+  context '#reverse' do
+    it 'returns "olleh" for "hello"' do
+      expect(Solver.reverse("hello")).to eql "olleh"
+    end
+
+    it 'returns "dlrow" for "world"' do
+      expect(Solver.reverse("world")).to eql "dlrow"
     end
   end
 end
