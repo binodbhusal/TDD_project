@@ -27,4 +27,18 @@ describe Solver do
       expect(Solver.reverse("world")).to eql "dlrow"
     end
   end
+
+  context '#fizzbuzz' do
+    it 'returns "fizz" for 3' do
+      expect(Solver.fizzbuzz(3)).to eql "fizz"
+    end
+
+    it 'returns "buzz" for 5' do
+      expect(Solver.fizzbuzz(5)).to eql "buzz"
+    end
+
+    it 'returns "fizzbuzz" for 15' do
+      expect(Solver.fizzbuzz(15)).to eql "fizzbuzz"
+    end
+  end
 end
